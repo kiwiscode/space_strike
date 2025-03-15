@@ -38,7 +38,6 @@ const sunIcon = document.querySelector(".sun-icon");
 const moonIcon = document.querySelector(".moon-icon");
 
 sunIcon.addEventListener("click", () => {
-  console.log("sun is active");
   localStorage.setItem("theme", "dark-theme");
   sunIcon.style.fill = "white";
   moonIcon.style.fill = "white";
@@ -50,7 +49,6 @@ sunIcon.addEventListener("click", () => {
 });
 
 moonIcon.addEventListener("click", function () {
-  console.log("moon is active");
   localStorage.setItem("theme", "light-theme");
   sunIcon.style.fill = "#1c1c1c";
   moonIcon.style.fill = "#1c1c1c";
