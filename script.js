@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const currentYear = new Date().getFullYear();
+  const currentYearSpan = document.getElementById("currentYear");
+  currentYearSpan.innerHTML = currentYear;
+});
+
 const play = document.querySelector(".play");
 const newGameBtn = document.querySelector(".new-game");
 const guessMyNumber = document.querySelector(".guess-my-number");
